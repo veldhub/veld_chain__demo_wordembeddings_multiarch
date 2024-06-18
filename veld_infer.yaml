@@ -1,0 +1,16 @@
+x-veld:
+  chain:
+    about:
+      description:
+      topics:
+
+services:
+  veld_infer:
+    extends:
+      file: ./veld_code__demo__word2vec/veld_infer.yaml
+      service: veld_infer
+    volumes:
+      - ./veld_data__demo__word2vec_models/:/veld/input/
+    environment:
+      in_model_file: "m2.model"
+

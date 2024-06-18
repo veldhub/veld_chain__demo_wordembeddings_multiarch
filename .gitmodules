@@ -1,0 +1,9 @@
+[submodule "veld_code__demo__word2vec"]
+	path = veld_code__demo__word2vec
+	url = https://github.com/acdh-oeaw/veld_code__demo__word2vec.git
+[submodule "veld_data__demo__training_data"]
+	path = veld_data__demo__training_data
+	url = https://github.com/acdh-oeaw/veld_data__demo__training_data.git
+[submodule "veld_code__demo__wikipedia_loader"]
+	path = veld_code__demo__wikipedia_loader
+	url = https://github.com/acdh-oeaw/veld_code__demo__wikipedia_loader.git

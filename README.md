@@ -13,7 +13,7 @@ It integrates three processes:
 
 ### how to run
 
-###### clone this repo, recursively with all submodules
+#### clone this repo, recursively with all submodules
 ```
 git clone --recurse-submodules https://github.com/acdh-oeaw/veld_chain__demo__word2vec.git
 ```

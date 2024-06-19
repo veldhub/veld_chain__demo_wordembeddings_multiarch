@@ -13,24 +13,24 @@ It integrates three processes:
 
 ### how to run
 
-#### clone this repo, recursively with all submodules
+clone this repo, recursively with all submodules :
 ```
 git clone --recurse-submodules https://github.com/acdh-oeaw/veld_chain__demo__word2vec.git
 ```
 
-Do preprocessing, which saves the data into `./veld_data__demo__training_data/bible.txt`
+Do preprocessing, which saves the data into `./veld_data__demo__training_data/bible.txt` :
 ```
 docker compose -f veld_preprocess.yaml up
 ```
 
 Do training (this will take 5-15 minutes, depending on hardware), which saves a model into
-`./veld_data__demo__word2vec_model/bible.word2vec`.
+`./veld_data__demo__word2vec_model/bible.word2vec` :
 ```
 docker compose -f veld_train.yaml up
 ```
 
 Do inference, by running a jupyter notebook, which can be opened at http://localhost:8888/ , there
-simply execute all cells and have a look at the results.
+simply execute all cells and have a look at the results :
 ```
 docker compose -f veld_infer.yaml up
 ```

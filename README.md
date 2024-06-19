@@ -7,7 +7,7 @@ self-link shortened: https://t.ly/VZyke
 This a demo repo of the VELD design, that trains a word2vec model from scratch.
 
 It integrates three processes: 
-- veld_preprocess: downloads the bible and transforms it to training data
+- [veld_preprocess](./veld_preprocess.yaml): downloads the bible and transforms it to training data
 - veld_train: trains a word2vec model based on this data
 - veld_infer: uses the model to run a jupyter notebook for inference.
 

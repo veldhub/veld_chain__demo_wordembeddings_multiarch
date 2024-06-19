@@ -20,7 +20,7 @@ git clone --recurse-submodules https://github.com/acdh-oeaw/veld_chain__demo__wo
 
 Do preprocessing, which saves the data into `./veld_data__demo__training_data/bible.txt` :
 ```
-docker compose -f veld_preprocess.yaml up
+docker compose -f veld_preprocess.yaml up # or docker-compose if you have an older version
 ```
 
 Do training (this will take 5-15 minutes, depending on hardware), which saves a model into

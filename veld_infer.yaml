@@ -1,8 +1,10 @@
 x-veld:
   chain:
     about:
-      description:
+      description: "inference with a word2vec model, visualising relatedness in a jupyter notebook."
       topics:
+        - "NLP"
+        - "word embeddings"
 
 services:
   veld_infer:

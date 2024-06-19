@@ -1,5 +1,10 @@
 x-veld:
   chain:
+    about:
+      description: "Download and preprocessing of the bible"
+      topics:
+        - "ETL"
+        - "NLP"
 
 services:
   veld_preprocess:
@@ -8,4 +13,7 @@ services:
       service: veld
     volumes:
       - ./veld_data__demo__training_data/:/veld/output/
+    environment:
+      in_url: "https://github.com/mxw/grmr/raw/master/src/finaltests/bible.txt"
+      out_file: "bible.txt"
 

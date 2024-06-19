@@ -1,8 +1,11 @@
 x-veld:
   chain:
     about:
-      description:
+      description: "training of a word2vec model, with the preprocessed bible as input."
       topics:
+        - "NLP"
+        - "word embeddings"
+
 
 services:
   veld_train:

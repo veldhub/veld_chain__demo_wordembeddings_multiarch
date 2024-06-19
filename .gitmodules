@@ -4,6 +4,6 @@
 [submodule "veld_data__demo__training_data"]
 	path = veld_data__demo__training_data
 	url = https://github.com/acdh-oeaw/veld_data__demo__training_data.git
-[submodule "veld_code__demo__wikipedia_loader"]
-	path = veld_code__demo__wikipedia_loader
-	url = https://github.com/acdh-oeaw/veld_code__demo__wikipedia_loader.git
+[submodule "veld_code__demo__preprocess"]
+	path = veld_code__demo__preprocess
+	url = https://github.com/acdh-oeaw/veld_code__demo__preprocess.git

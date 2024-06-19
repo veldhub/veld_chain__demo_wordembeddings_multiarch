@@ -7,10 +7,10 @@ x-veld:
 services:
   veld_infer:
     extends:
-      file: ./veld_code__demo__word2vec/veld_infer.yaml
+      file: ./veld_code__demo__train_word2vec/veld_infer.yaml
       service: veld_infer
     volumes:
-      - ./veld_data__demo__word2vec_models/:/veld/input/
+      - ./veld_data__demo__word2vec_model/:/veld/input/
     environment:
-      in_model_file: "m2.model"
+      in_model_file: "bible.word2vec"
 

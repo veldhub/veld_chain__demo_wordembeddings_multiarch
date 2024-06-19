@@ -1,6 +1,5 @@
 x-veld:
   chain:
-    # TODO
     about:
       description:
       topics:
@@ -8,16 +7,16 @@ x-veld:
 services:
   veld_train:
     extends:
-      file: ./veld_code__demo__word2vec/veld_train.yaml
+      file: ./veld_code__demo__train_word2vec/veld_train.yaml
       service: veld_train
     volumes:
       - ./veld_data__demo__training_data/:/veld/input/
-      - ./veld_data__demo__word2vec_models/:/veld/output/
+      - ./veld_data__demo__word2vec_model/:/veld/output/
     environment:
-      in_train_data_file: "out.txt"
-      out_model_file: "m2.model"
-      epochs: 1000
-      vector_size: 500
-      window: 5
+      in_train_data_file: "bible.txt"
+      out_model_file: "bible.word2vec"
+      epochs: 500
+      vector_size: 300
+      window: 7
       min_count: 5
 

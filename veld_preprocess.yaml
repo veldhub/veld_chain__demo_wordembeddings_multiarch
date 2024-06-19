@@ -2,9 +2,9 @@ x-veld:
   chain:
 
 services:
-  veld_load:
+  veld_preprocess:
     extends:
-      file: ./veld_code__demo__wikipedia_loader/veld.yaml
+      file: ./veld_code__demo__preprocess/veld.yaml
       service: veld
     volumes:
       - ./veld_data__demo__training_data/:/veld/output/

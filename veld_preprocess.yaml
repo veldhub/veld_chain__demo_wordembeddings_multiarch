@@ -5,6 +5,7 @@ x-veld:
       topics:
         - "ETL"
         - "NLP"
+        - "bible studies"
 
 services:
   veld_preprocess:

@@ -1,7 +1,5 @@
 # veld_chain__demo__word2vec
 
-self-link shortened: https://t.ly/VZyke
-
 ### about
 
 This a demo repo of the VELD design, that trains a word2vec model from scratch.

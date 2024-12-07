@@ -8,13 +8,27 @@ x-veld:
         - "bible studies"
 
 services:
-  veld_preprocess:
+  veld_downloader:
     extends:
-      file: ./veld_code__demo__preprocess/veld.yaml
-      service: veld
+      file: ./code/veld_code__downloader/veld.yaml
+      service: veld_downloader
     volumes:
-      - ./veld_data__demo__training_data/:/veld/output/
+      - ./data/training_data/:/veld/output/
     environment:
-      in_url: "https://github.com/mxw/grmr/raw/master/src/finaltests/bible.txt"
+      url: "https://raw.githubusercontent.com/mxw/grmr/master/src/finaltests/bible.txt"
       out_file: "bible.txt"
+
+  veld_bible_preprocess:
+    extends:
+      file: ./code/bible_preprocess/compose.yaml
+      service: bible_preprocess
+    volumes:
+      - ./data/training_data/:/veld/input/
+      - ./data/training_data/:/veld/output/
+    environment:
+      in_file: "bible.txt"
+      out_file: "bible.txt"
+    depends_on:
+      veld_downloader:
+        condition: service_completed_successfully
 

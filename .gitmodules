@@ -1,3 +1,12 @@
 [submodule "code/veld_code__downloader"]
 	path = code/veld_code__downloader
 	url = https://github.com/veldhub/veld_code__downloader.git
+[submodule "code/veld_code__word2vec"]
+	path = code/veld_code__word2vec
+	url = https://github.com/veldhub/veld_code__word2vec.git
+[submodule "code/veld_code__fasttext"]
+	path = code/veld_code__fasttext
+	url = https://github.com/veldhub/veld_code__fasttext.git
+[submodule "code/veld_code__glove"]
+	path = code/veld_code__glove
+	url = https://github.com/veldhub/veld_code__glove.git

@@ -20,8 +20,8 @@ services:
 
   veld_bible_preprocess:
     extends:
-      file: ./code/bible_preprocess/compose.yaml
-      service: bible_preprocess
+      file: ./code/veld_code__bible_preprocess/veld.yaml
+      service: veld_bible_preprocess
     volumes:
       - ./data/training_data/:/veld/input/
       - ./data/training_data/:/veld/output/

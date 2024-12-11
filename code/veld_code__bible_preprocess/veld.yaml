@@ -1,8 +1,0 @@
-
-services:
-  veld_bible_preprocess:
-    build: .
-    command: python /veld/code/bible_preprocess.py
-    volumes:
-      - ./bible_preprocess.py:/veld/code/bible_preprocess.py
-

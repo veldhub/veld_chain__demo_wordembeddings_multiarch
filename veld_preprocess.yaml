@@ -19,10 +19,10 @@ services:
       out_file: "bible.txt"
 
   veld_bible_preprocess:
-    extends:
-      file: ./code/veld_code__bible_preprocess/veld.yaml
-      service: veld_bible_preprocess
+    build: ./code/bible_preprocess/
+    command: python /veld/code/bible_preprocess.py
     volumes:
+      - ./code/bible_preprocess/bible_preprocess.py:/veld/code/bible_preprocess.py
       - ./data/training_data/:/veld/input/
       - ./data/training_data/:/veld/output/
     environment:

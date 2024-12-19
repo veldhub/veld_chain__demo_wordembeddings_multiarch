@@ -1,8 +1,8 @@
-# veld_chain__demo__word2vec
+# veld_chain__demo_wordembeddings_multiarch
 
 ### about
 
-This a demo repo of the VELD design, that trains a word2vec model from scratch.
+This a demo repo of the VELD design that trains word embedding models from scratch.
 
 It integrates three processes: 
 - [veld_preprocess](./veld_preprocess.yaml): downloads the bible and transforms it to training data

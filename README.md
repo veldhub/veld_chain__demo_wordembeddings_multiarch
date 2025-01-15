@@ -1,6 +1,6 @@
 # veld_chain__demo_wordembeddings_multiarch
 
-## TLD;DR
+## TL;DR
 
 ```
 git clone --recurse-submodules https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch.git

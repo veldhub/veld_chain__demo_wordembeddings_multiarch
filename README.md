@@ -2,6 +2,8 @@
 
 ## TL;DR
 
+run it all with:
+
 ```
 git clone --recurse-submodules https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch.git
 cd veld_chain__demo_wordembeddings_multiarch

@@ -4,7 +4,7 @@
 
 run it all with:
 
-**(note: older versions of docker require the `docker-compose` instead of `docker compose`)**
+**note: older versions of docker require the `docker-compose` instead of `docker compose`**
 
 ```
 git clone --recurse-submodules https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch.git

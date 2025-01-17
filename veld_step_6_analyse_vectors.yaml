@@ -9,6 +9,6 @@ services:
       - 8888:8888
     working_dir: /veld/code/
     volumes:
-      - ./code/analyse_vectors/:/veld/code/
+      - ./code/analyse_vectors/notebooks/:/veld/code/
       - ./data/vectors/:/veld/input/
 

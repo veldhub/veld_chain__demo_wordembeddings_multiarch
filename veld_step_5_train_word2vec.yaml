@@ -19,10 +19,9 @@ services:
       in_train_data_file: "bible_processed.txt"
       out_model_file: "m1.bin"
       model_description: "simple bible word2vec model"
-      epochs: 20
-      vector_size: 200
-      window: 5
-      min_count: 5
+      epochs: 50
+      vector_size: 300
+      window: 10
 
   veld_step_5_export_word2vec:
     extends:

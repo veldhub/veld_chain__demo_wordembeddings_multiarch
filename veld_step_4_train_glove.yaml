@@ -18,11 +18,9 @@ services:
       out_vector_file: "m1_vector"
       model_id: "m1"
       model_description: "simple bible glove model"
-      memory: 4.0
-      vocab_min_count: 5
-      vector_size: 200
-      max_iter: 5
-      window_size: 5
+      vector_size: 300
+      max_iter: 50
+      window_size: 10
 
   veld_step_4_export_glove:
     extends:

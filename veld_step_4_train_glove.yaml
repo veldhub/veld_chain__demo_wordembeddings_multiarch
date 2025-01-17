@@ -2,13 +2,14 @@ x-veld:
   chain:
 
 services:
+
   veld_step_4_train_glove:
     extends:
       file: ./code/veld_code__glove/veld_train.yaml
       service: veld_train 
     volumes:
       - ./data/training_data/:/veld/input/
-      - ./data/models/glove/m1/:/veld/output/
+      - ./data/models/glove/:/veld/output/
     environment:
       in_corpus_file: "bible_processed.txt"
       out_vocab_file: "m1_vocab.txt"
@@ -22,4 +23,18 @@ services:
       vector_size: 200
       max_iter: 5
       window_size: 5
+
+  veld_step_4_export_glove:
+    extends:
+      file: ./code/veld_code__glove/veld_export.yaml
+      service: veld_export
+    volumes:
+      - ./data/models/glove/:/veld/input/
+      - ./data/vectors/glove/:/veld/output/
+    environment:
+      in_vector_file: "m1_vector.txt"
+      out_vector_file: "m1.pkl"
+    depends_on:
+      veld_step_4_train_glove:
+        condition: service_completed_successfully
 

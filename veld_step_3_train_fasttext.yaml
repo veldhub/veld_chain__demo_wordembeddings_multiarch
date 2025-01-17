@@ -2,13 +2,14 @@ x-veld:
   chain:
 
 services:
+
   veld_step_3_train_fasttext:
     extends:
       file: ./code/veld_code__fasttext/veld_train.yaml
       service: veld_train
     volumes:
       - ./data/training_data/:/veld/input/
-      - ./data/models/fasttext/m1/:/veld/output/
+      - ./data/models/fasttext/:/veld/output/
     environment:
       in_train_data_file: "bible_processed.txt"
       out_model_file: "m1.bin"
@@ -16,4 +17,18 @@ services:
       vector_size: 200
       epochs: 20
       window_size: 5
+
+  veld_step_3_export_fasttext:
+    extends:
+      file: ./code/veld_code__fasttext/veld_export.yaml
+      service: veld_export
+    volumes:
+      - ./data/models/fasttext/:/veld/input/
+      - ./data/vectors/fasttext/:/veld/output/
+    environment:
+      in_model_file: "m1.bin"
+      out_vector_file: "m1.pkl"
+    depends_on:
+      veld_step_3_train_fasttext:
+        condition: service_completed_successfully
 

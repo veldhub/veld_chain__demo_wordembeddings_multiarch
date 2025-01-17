@@ -7,13 +7,14 @@ x-veld:
       - "Word Embeddings"
 
 services:
+
   veld_step_5_train_word2vec:
     extends:
       file: ./code/veld_code__word2vec/veld_train.yaml
       service: veld_train
     volumes:
       - ./data/training_data/:/veld/input/
-      - ./data/models/word2vec/m1/:/veld/output/
+      - ./data/models/word2vec/:/veld/output/
     environment:
       in_train_data_file: "bible_processed.txt"
       out_model_file: "m1.bin"
@@ -22,4 +23,18 @@ services:
       vector_size: 200
       window: 5
       min_count: 5
+
+  veld_step_5_export_word2vec:
+    extends:
+      file: ./code/veld_code__word2vec/veld_export.yaml
+      service: veld_export
+    volumes:
+      - ./data/models/word2vec/:/veld/input/
+      - ./data/vectors/word2vec/:/veld/output/
+    environment:
+      in_model_file: "m1.bin"
+      out_vector_file: "m1.pkl"
+    depends_on:
+      veld_step_5_train_word2vec:
+        condition: service_completed_successfully
 

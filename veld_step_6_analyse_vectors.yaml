@@ -2,7 +2,7 @@ x-veld:
   code:
 
 services:
-  veld_step_x_analyse_vectors:
+  veld_step_6_analyse_vectors:
     build: ./code/analyse_vectors/
     command: jupyter notebook --allow-root --ip='*' --NotebookApp.token='' --NotebookApp.password=''
     ports:

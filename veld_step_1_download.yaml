@@ -17,6 +17,7 @@ services:
     environment:
       url: "https://raw.githubusercontent.com/mxw/grmr/master/src/finaltests/bible.txt"
 
+
   veld_bible_preprocess:
     build: ./code/bible_preprocess/
     command: python /veld/code/bible_preprocess.py

@@ -9,7 +9,7 @@ run it all with:
 ```
 git clone --recurse-submodules https://github.com/veldhub/veld_chain__demo_wordembeddings_multiarch.git
 cd veld_chain__demo_wordembeddings_multiarch
-docker compose -f veld_multichain_all.yaml up
+docker compose -f veld_step_all.yaml up
 ```
 
 ## about
@@ -32,11 +32,11 @@ git clone --recurse-submodules https://github.com/veldhub/veld_chain__demo_worde
 
 The following chain velds were used. Open the respective veld yaml file for more information.
 
-**[./veld_multichain_all.yaml](./veld_multichain_all.yaml)** 
+**[./veld_step_all.yaml](./veld_step_all.yaml)** 
 
 Runs all chains sequentially
 
 ```
-docker compose -f veld_multichain_all.yaml up
+docker compose -f veld_step_all.yaml up
 ```
 

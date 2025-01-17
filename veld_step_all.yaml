@@ -3,3 +3,40 @@ x-veld:
 
 services:
 
+  veld_step_1_download:
+    extends:
+      file: ./veld_step_1_download.yaml
+      service: veld_step_1_download
+
+  veld_step_2_preprocess:
+    extends:
+      file: ./veld_step_2_preprocess.yaml
+      service: veld_step_2_preprocess
+    depends_on:
+      veld_step_1_download:
+        condition: service_completed_successfully
+
+  veld_step_3_train_fasttext:
+    extends:
+      file: ./veld_step_3_train_fasttext.yaml
+      service: veld_step_3_train_fasttext
+    depends_on:
+      veld_step_2_preprocess:
+        condition: service_completed_successfully
+
+  veld_step_4_train_glove:
+    extends:
+      file: ./veld_step_4_train_glove.yaml
+      service: veld_step_4_train_glove
+    depends_on:
+      veld_step_3_train_fasttext:
+        condition: service_completed_successfully
+
+  veld_step_5_train_word2vec:
+    extends:
+      file: ./veld_step_5_train_word2vec.yaml
+      service: veld_step_5_train_word2vec
+    depends_on:
+      veld_step_4_train_glove:
+        condition: service_completed_successfully
+

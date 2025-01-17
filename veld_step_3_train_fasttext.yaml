@@ -1,0 +1,19 @@
+x-veld:
+  chain:
+
+services:
+  veld_step_3_train_fasttext:
+    extends:
+      file: ./code/veld_code__fasttext/veld_train.yaml
+      service: veld_train
+    volumes:
+      - ./data/training_data/:/veld/input/
+      - ./data/models/fasttext/m1/:/veld/output/
+    environment:
+      in_train_data_file: "bible_processed.txt"
+      out_model_file: "m1.bin"
+      model_description: "simple bible fasttext model"
+      vector_size: 200
+      epochs: 20
+      window_size: 5
+

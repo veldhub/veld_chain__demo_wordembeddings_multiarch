@@ -7,7 +7,7 @@ x-veld:
       - "Word Embeddings"
 
 services:
-  veld_train:
+  veld_step_5_train_word2vec:
     extends:
       file: ./code/veld_code__word2vec/veld_train.yaml
       service: veld_train
@@ -15,9 +15,9 @@ services:
       - ./data/training_data/:/veld/input/
       - ./data/models/word2vec/m1/:/veld/output/
     environment:
-      in_train_data_file: bible.txt
-      out_model_file: m1.bin
-      model_description: "trained on bible with simple hyperparams"
+      in_train_data_file: "bible_processed.txt"
+      out_model_file: "m1.bin"
+      model_description: "simple bible word2vec model"
       epochs: 20
       vector_size: 200
       window: 5

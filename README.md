@@ -24,7 +24,7 @@ architectures used are [fastText](https://fasttext.cc/),
 notebook is launched to compare the differently trained vectors on a few sample words. 
 
 The outcome of this training setup on such a small training data set is meant to be illustrative of 
-the reproducibility of the workflows, rather than providing any deeper insight into the wrod 
+the reproducibility of the workflows, rather than providing any deeper insight into the word 
 contexts of the bible itself.
 
 ## requirements

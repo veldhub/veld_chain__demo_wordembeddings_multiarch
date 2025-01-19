@@ -20,10 +20,12 @@ It contains several chain velds, based on heterogenous code stacks, and trains w
 scratch. As training data, the bible is used and preproccessed, and the underlying word embeddings
 architectures used are [fastText](https://fasttext.cc/), 
 [GloVe](https://nlp.stanford.edu/projects/glove/), and 
-[word2vec](https://radimrehurek.com/gensim/models/word2vec.html) . After training a jupyter notebook
-is launched to compare the differently trained vectors on a few sample words. 
+[word2vec](https://radimrehurek.com/gensim/models/word2vec.html) . After training, a jupyter 
+notebook is launched to compare the differently trained vectors on a few sample words. 
 
-This setup is an illustrative example on how to use the VELD schema.
+The outcome of this training setup on such a small training data set is meant to be illustrative of 
+the reproducibility of the workflows, rather than providing any deeper insight into the wrod 
+contexts of the bible itself.
 
 ## requirements
 

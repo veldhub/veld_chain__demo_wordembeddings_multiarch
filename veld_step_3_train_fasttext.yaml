@@ -14,8 +14,8 @@ services:
       in_train_data_file: "bible_processed.txt"
       out_model_file: "m1.bin"
       model_description: "simple bible fasttext model"
-      vector_size: 300
-      epochs: 200
+      vector_size: 200
+      epochs: 100
       window_size: 10
 
   veld_step_3_export_fasttext:

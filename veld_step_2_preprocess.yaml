@@ -1,5 +1,13 @@
 x-veld:
   chain:
+    description: "Preprocesses the bible to be compatible with word embeddings training. This chain 
+      does not use a code veld but build context and code that is integrated into the chain repo 
+      itself, since the preprocessing is highly specific to this kind of data and the subsequent 
+      training."
+    topic:
+      - "ETL"
+      - "NLP"
+      - "Bible Studies"
 
 services:
   veld_step_2_preprocess:

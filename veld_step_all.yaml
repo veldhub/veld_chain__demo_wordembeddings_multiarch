@@ -1,5 +1,13 @@
 x-veld:
   chain:
+    description: "This is a multi chain that executes all other individual chains in sequential 
+      order. Refer to the other veld yaml files for more information on each step."
+    topic:
+      - "ETL"
+      - "NLP"
+      - "Machine Learning"
+      - "Word Embeddings"
+      - "Bible Studies"
 
 services:
 

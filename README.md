@@ -14,11 +14,11 @@ docker compose -f veld_step_all.yaml up
 
 ## about
 
-This repo is a [VELD](https://zenodo.org/records/13322913) demonstration.
+This is a [VELD](https://zenodo.org/records/13322913) demonstration.
 
-It contains several chain velds, based on heterogenous code stacks, and trains word embeddings from
-scratch. As training data, the bible is used and preproccessed, and the underlying word embeddings
-architectures used are [fastText](https://fasttext.cc/), 
+It contains several chain velds, based on different isolated code stacks, which train word
+embeddings from scratch. As training data, the bible is used and preproccessed, and the underlying
+word embeddings architectures used are [fastText](https://fasttext.cc/), 
 [GloVe](https://nlp.stanford.edu/projects/glove/), and 
 [word2vec](https://radimrehurek.com/gensim/models/word2vec.html) . After training, a jupyter 
 notebook is launched to compare the differently trained vectors on a few sample words. 

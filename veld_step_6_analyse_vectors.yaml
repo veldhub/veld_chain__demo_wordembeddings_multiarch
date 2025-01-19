@@ -1,5 +1,15 @@
 x-veld:
   code:
+    description: "Reads in the trained word vectors from their pkl serializations and tests them 
+      for plausability on a few selected words which should show intuitive close or distant 
+      relations to each other. This chain does not inherit from a code veld but is defined entirely 
+      within its containing chain repository since its code and data are highly context-specific."
+    topic:
+      - "ETL"
+      - "NLP"
+      - "Machine Learning"
+      - "Word Embeddings"
+      - "Bible Studies"
 
 services:
   veld_step_6_analyse_vectors:

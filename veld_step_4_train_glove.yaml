@@ -1,5 +1,15 @@
 x-veld:
   chain:
+    description: "Trains a glove model on the bible and exports its vectors as a dict serialized 
+      into a pkl file. The training data is rather small and the hyperparameteres are simplistic, 
+      in order to demonstrate the reproducibility of this chain rather than claiming any deeper 
+      insight into the data's words context."
+    topic:
+      - "ETL"
+      - "NLP"
+      - "Machine Learning"
+      - "Word Embeddings"
+      - "Bible Studies"
 
 services:
 

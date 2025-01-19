@@ -19,7 +19,7 @@ services:
       model_id: "m1"
       model_description: "simple bible glove model"
       vector_size: 300
-      max_iter: 50
+      max_iter: 200
       window_size: 10
 
   veld_step_4_export_glove:

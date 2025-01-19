@@ -19,7 +19,7 @@ services:
       in_train_data_file: "bible_processed.txt"
       out_model_file: "m1.bin"
       model_description: "simple bible word2vec model"
-      epochs: 50
+      epochs: 200
       vector_size: 300
       window: 10
 

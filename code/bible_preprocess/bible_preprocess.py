@@ -8,8 +8,8 @@ import string
 print("-- bible preprocessing: start -------------------------------------------")
 IN_FILE = "/veld/input/" + os.getenv("in_file")
 OUT_FILE = "/veld/output/" + os.getenv("out_file")
-print("IN_FILE:", IN_FILE)
-print("OUT_FILE:", OUT_FILE)
+print("in_file:", IN_FILE)
+print("out_file:", OUT_FILE)
 
 
 # load sentence splitting function

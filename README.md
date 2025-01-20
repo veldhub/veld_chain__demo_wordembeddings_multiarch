@@ -110,7 +110,9 @@ docker compose -f veld_step_5_train_word2vec.yaml up
 **[./veld_step_6_analyse_vectors.yaml](./veld_step_6_analyse_vectors.yaml)** 
 
 Launches a jupyter notebook at http://localhost:8888/ which loads the previously exported word 
-vectors and compares them numerically and visually on some sample words.
+vectors and compares them numerically and visually on some sample words. The notebook is persisted 
+at: 
+[./code/analyse_vectors/notebooks/analyse_vectors.ipynb](./code/analyse_vectors/notebooks/analyse_vectors.ipynb) .
 
 After reproducing the entire previous sequences yourself and execution of the notebook, feel free to
 save the notebook and compare the resulting differences with `git diff

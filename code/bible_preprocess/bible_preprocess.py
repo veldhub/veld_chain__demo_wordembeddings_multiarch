@@ -20,7 +20,7 @@ with open(IN_FILE, "r") as f:
     content = f.read()
 
 # transform content
-print("make lowercase and clean from newlines.")
+print("make lowercase and clean from newlines")
 content = content.lower()
 content = content.replace("\r\n", " ")
 content = content.replace("\n", " ")

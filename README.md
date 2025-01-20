@@ -27,6 +27,9 @@ The outcome of this training setup on such a small training data set is meant to
 the reproducibility of the workflows, rather than claiming any deeper insight into the word 
 contexts of the bible itself.
 
+The very final step, an analysis of the entire training, is encapsulated in
+[./code/analyse_vectors/notebooks/analyse_vectors.ipynb](./code/analyse_vectors/notebooks/analyse_vectors.ipynb) .
+
 ## requirements
 
 - git
@@ -108,6 +111,13 @@ docker compose -f veld_step_5_train_word2vec.yaml up
 
 Launches a jupyter notebook at http://localhost:8888/ which loads the previously exported word 
 vectors and compares them numerically and visually on some sample words.
+
+After reproducing the entire previous sequences yourself and execution of the notebook, feel free to
+save the notebook and compare the resulting differences with `git diff
+./code/analyse_vectors/notebooks/analyse_vectors.ipynb`, where the reproduced vector similarities
+will have only slight differences to the record of previously trained ones. This difference is due
+to randomization within the training, but should be small enough to indicate approximate
+reproduction.
 
 ```
 docker compose -f veld_step_6_analyse_vectors.yaml up

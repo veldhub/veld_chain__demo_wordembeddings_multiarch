@@ -20,10 +20,13 @@ with open(IN_FILE, "r") as f:
     content = f.read()
 
 # transform content
+print("make lowercase and clean from newlines.")
 content = content.lower()
 content = content.replace("\r\n", " ")
 content = content.replace("\n", " ")
+print("remove chapter and verse indices")
 content = re.sub("\d+:\d+ ", "", content)
+print("tokenize to sentences, remove punctuation")
 sentence_list = []
 for sentence in nltk.sent_tokenize(content):
     word_list_new = []

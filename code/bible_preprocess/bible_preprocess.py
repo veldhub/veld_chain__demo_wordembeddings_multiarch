@@ -5,8 +5,11 @@ import nltk
 import string
 
 
+print("-- bible preprocessing: start -------------------------------------------")
 IN_FILE = "/veld/input/" + os.getenv("in_file")
 OUT_FILE = "/veld/output/" + os.getenv("out_file")
+print("IN_FILE:", IN_FILE)
+print("OUT_FILE:", OUT_FILE)
 
 
 # load sentence splitting function
@@ -36,4 +39,6 @@ sentence_list = sentence_list[:29792]
 with open(OUT_FILE, "w") as f:
     for sentence in sentence_list:
         f.write(sentence + "\n")
+
+print("-- bible preprocessing: done --------------------------------------------")
 

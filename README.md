@@ -1,4 +1,4 @@
-# veld_chain__demo_wordembeddings_multiarch
+# ![veld chain](https://raw.githubusercontent.com/veldhub/.github/refs/heads/main/images/symbol_V_letter.png) veld_chain__demo_wordembeddings_multiarch
 
 ## TL;DR
 

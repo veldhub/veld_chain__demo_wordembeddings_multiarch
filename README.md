@@ -14,7 +14,7 @@ docker compose -f veld_step_all.yaml up
 
 ## about
 
-This is a [VELD](https://zenodo.org/records/13322913) demonstration.
+This is a [VELD](https://zenodo.org/records/13322913) demonstration. For more real-world applications, see https://github.com/veldhub .
 
 It contains several chain velds, based on different isolated code stacks, which train word
 embeddings from scratch. As training data, the bible is used and preproccessed, and the underlying
